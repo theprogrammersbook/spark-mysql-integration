@@ -23,6 +23,7 @@ object SparkMySqlIntegration {
   val table = "test_json"
   val field = "json"
   val url = "jdbc:mysql://localhost:3306"
+  //jdbc:mysql://localhost/InternetProject?createDatabaseIfNotExist=true&useUnicode=yes&characterEncoding=UTF-8
   var localOutputFile = "prepared_mysql_data"
   var sc: SparkContext = null
   var connection: Connection = null
